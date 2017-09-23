@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ghost.mapper.TaskMapper">
+	<insert id="insertTask" parameterType="Task">
+		<selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+			select replace(uuid(),'-','') from dual
+		</selectKey>
+		insert into
+		task(id,name,descript,state)
+		values(#{id},#{name},#{descript},#{state})
+	</insert>
+</mapper>
