@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 //@Configuration
-//@ComponentScan  
+//@ComponentScan
 @SpringBootApplication
 public class Application {
 
