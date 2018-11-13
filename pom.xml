@@ -71,6 +71,7 @@
 				</dependencies>
 			</plugin>
 		</plugins>
+		<finalName>SBM</finalName>
 	</build>
 
 	<!-- Add Spring repositories -->
