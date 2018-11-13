@@ -2,7 +2,7 @@
 FROM tomcat:7.0.86
 
 #作者
-MAINTAINER "zhangchx <njzcx@126.com>"
+MAINTAINER jackchow "jack_chow621@sina.com"
 
 
 #运行安装telnet和nc
