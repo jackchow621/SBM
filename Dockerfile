@@ -18,7 +18,7 @@ ENV CATALINA_BASE: /usr/local/tomcat \
     JRE_HOME: /usr
     
 # 镜像暴露8088端口； 
-EXPOSE 8088 
+EXPOSE 8080 
 
 #启动入口
 ENTRYPOINT ["catalina.sh","run"]
