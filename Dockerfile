@@ -16,6 +16,9 @@ ENV CATALINA_BASE: /usr/local/tomcat \
     CATALINA_HOME: /usr/local/tomcat \
     CATALINA_TMPDIR: /usr/local/tomcat/temp \
     JRE_HOME: /usr
+    
+# 镜像暴露3306端口； 
+EXPOSE 3306 
 
 #启动入口
 ENTRYPOINT ["catalina.sh","run"]
